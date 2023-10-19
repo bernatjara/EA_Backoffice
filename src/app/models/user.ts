@@ -5,5 +5,5 @@ export interface IUser {
     name: string;
     password: string;
     email: string;
-    //asignatura: IAsignatura[];
+    asignatura?: IAsignatura[];
 }

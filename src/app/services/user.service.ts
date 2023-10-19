@@ -22,4 +22,18 @@ export class UserService {
   getUsers(): Observable<IUser[]>{
     return this.http.get<IUser[]>(this.usersUrl);
   }
+
+  getUser(id: string): Observable<IUser> {
+    const url = `${this.usersUrl}/${id}`;
+    return this.http.get<IUser>(url)
+  }
+
+  //////// Save methods //////////
+
+  /** PUT: update the user on the server */
+  updateUser(id: string, user: IUser): Observable<any> {
+    const url = `${this.usersUrl}/${id}`;
+    return this.http.put<IUser>(url, user);
+  }
+
 }
