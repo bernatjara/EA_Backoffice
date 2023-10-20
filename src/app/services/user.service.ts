@@ -31,7 +31,7 @@ export class UserService {
   //////// Save methods //////////
 
   /** PUT: update the user on the server */
-  updateUser(id: string, user: IUser): Observable<any> {
+  updateUser(id: string, user: any): Observable<any> {
     const url = `${this.usersUrl}/${id}`;
     return this.http.put<IUser>(url, user);
   }

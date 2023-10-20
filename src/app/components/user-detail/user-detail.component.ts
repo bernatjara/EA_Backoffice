@@ -37,8 +37,15 @@ export class UserDetailComponent implements OnInit {
   save(): void {
     if (this.user) {
       const id = String(this.route.snapshot.paramMap.get('id'));
-      this.userService.updateUser(id, this.user)
+      const userTO = {
+        name: this.user.name,
+        password: this.user.password,
+        email: this.user.email
+      };
+      console.log(userTO);
+      this.userService.updateUser(id, userTO)
         .subscribe(() => this.goBack());
+
     }
   }
 
