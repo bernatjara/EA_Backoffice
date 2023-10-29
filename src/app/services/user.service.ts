@@ -36,4 +36,12 @@ export class UserService {
     return this.http.put<IUser>(url, user);
   }
 
+  //////// Delete methods //////////
+
+  //**DELETE: delete the user on the server */
+  deleteUser(id: string): Observable<IUser> {
+    const url = `${this.usersUrl}/${id}`;
+    return this.http.delete<IUser>(url);
+  }
+
 }

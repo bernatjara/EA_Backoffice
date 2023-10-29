@@ -1,0 +1,11 @@
+<h2>Schedules</h2>
+
+<ul class="schedules">
+  <li *ngFor="let schedule of schedules" class="flex-container">
+    <a routerLink="/schedule_details/{{schedule._id}}">
+      <span class="badge">id: {{schedule._id}}</span> Name: {{schedule.name}}
+    </a>
+    <button type="button" class="delete" title="delete schedule"
+      (click)="delete(schedule)">x</button>
+  </li>
+</ul>

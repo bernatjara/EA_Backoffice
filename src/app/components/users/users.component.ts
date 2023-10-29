@@ -20,4 +20,10 @@ export class UsersComponent implements OnInit {
     this.userService.getUsers().subscribe(users =>this.users = users);
   }
 
+  delete(user: IUser): void {
+    if(confirm("Are you sure?") == true){
+      this.users = this.users.filter(u => u !== user);
+      this.userService.deleteUser(user._id).subscribe();
+    }
+  }
 }

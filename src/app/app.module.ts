@@ -8,13 +8,18 @@ import { UsersComponent } from './components/users/users.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
 import { AsignaturasComponent } from './components/asignaturas/asignaturas.component';
+import { SchedulesComponent } from './components/schedules/schedules.component';
+import { ScheduleDetailComponent } from './components/schedule-detail/schedule-detail.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     UserDetailComponent,
-    AsignaturasComponent
+    AsignaturasComponent,
+    SchedulesComponent,
+    ScheduleDetailComponent
   ],
   imports: [
     BrowserModule,

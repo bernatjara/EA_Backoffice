@@ -1,4 +1,4 @@
-.users {
+.schedules {
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
@@ -13,16 +13,16 @@
     box-sizing: border-box;
   }
   
-  .users li {
+  .schedules li {
     position: relative;
     cursor: pointer;
   }
   
-  .users li:hover {
+  .schedules li:hover {
     left: .1em;
   }
-
-  .users a {
+  
+  .schedules a {
     color: #333;
     text-decoration: none;
     background-color: #EEE;
@@ -34,17 +34,17 @@
     width: 100%;
   }
   
-  .users a:hover {
+  .schedules a:hover {
     color: #2c3a41;
     background-color: #e6e6e6;
   }
   
-  .users a:active {
+  .schedules a:active {
     background-color: #525252;
     color: #fafafa;
   }
   
-  .users .badge {
+  .schedules .badge {
     display: inline-block;
     font-size: small;
     color: white;
@@ -60,6 +60,7 @@
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
   }
+
   button.delete {
     margin-left: auto;
     font-size: 1.1rem;
