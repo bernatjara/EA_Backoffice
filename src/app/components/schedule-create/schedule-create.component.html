@@ -10,8 +10,8 @@
     <input id="duration" [(ngModel)]="schedule.duration" placeholder="Duration"/>
 </div>
 <div>
+    <button type="button" class="back" title="back"
+    (click)="goBack()">Go back</button>
     <button type="button" class="create" title="create schedule"
-(click)="createSchedule()">Create new schedule</button>
-<button type="button" class="back" title="back"
-(click)="goBack()">Go back</button>
+    (click)="createSchedule()">Save</button>
 </div>

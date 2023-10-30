@@ -9,4 +9,9 @@ routerLink="/user_create">Create new user</button>
     <button type="button" class="delete" title="delete user"
       (click)="delete(user)">x</button>
   </li>
+  <div class="pagination" style="margin-top: auto; display: flex; justify-content: center; color:#fffcea;">
+    <button type="button" [disabled]="currentPage === 1" (click)="previousPage()"> << Previous </button>
+    <button type="button" [disabled]="currentPage === totalPages" (click)="nextPage()"> Next >> </button>
+  </div>
 </ul>
+<!-- <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls> -->

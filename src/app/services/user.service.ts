@@ -19,8 +19,8 @@ export class UserService {
     private http: HttpClient
   ) { }
 
-  getUsers(): Observable<IUser[]>{
-    return this.http.get<IUser[]>(this.usersUrl);
+  getUsers(page: number, limit: number): Observable<any>{
+    return this.http.get(`${this.usersUrl}/${page}/${limit}`);
   }
 
   getUser(id: string): Observable<IUser> {

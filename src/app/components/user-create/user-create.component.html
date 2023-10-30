@@ -8,8 +8,8 @@
     <input id="password" [(ngModel)]="user.password" placeholder="Password"/>
 </div>
 <div>
+    <button type="button" class="back" title="back"
+    (click)="goBack()">Go back</button>
     <button type="button" class="create" title="create user"
-(click)="createUser()">Create new user</button>
-<button type="button" class="back" title="back"
-(click)="goBack()">Go back</button>
+    (click)="createUser()">Save</button>
 </div>
