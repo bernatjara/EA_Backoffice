@@ -42,4 +42,8 @@ export class ScheduleService {
     const url = `${this.schedulesUrl}/${id}`;
     return this.http.delete<ISchedule>(url);
   }
+  createSchedule(schedule:any): Observable<any>{
+    const url = `${this.schedulesUrl}`;
+    return this.http.post<ISchedule>(url,schedule);
+  }
 }

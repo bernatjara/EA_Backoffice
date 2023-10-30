@@ -1,0 +1,17 @@
+<h2>Create new schedule</h2>
+<div>
+    <label for="name">Name: </label>
+    <input id="name" [(ngModel)]="schedule.name" placeholder="Class name"/>
+    <label for="clase">Class: </label>
+    <input id="clase" [(ngModel)]="schedule.clase" placeholder="Room"/>
+    <label for="start">Starting time: </label>
+    <input id="start" [(ngModel)]="schedule.start" placeholder="Starting time"/>
+    <label for="duration">Duration: </label>
+    <input id="duration" [(ngModel)]="schedule.duration" placeholder="Duration"/>
+</div>
+<div>
+    <button type="button" class="create" title="create schedule"
+(click)="createSchedule()">Create new schedule</button>
+<button type="button" class="back" title="back"
+(click)="goBack()">Go back</button>
+</div>

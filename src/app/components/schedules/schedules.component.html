@@ -1,5 +1,6 @@
 <h2>Schedules</h2>
-
+<button type="button" class="create" title="create schedule"
+routerLink="/schedule_create">Create new schedule</button>
 <ul class="schedules">
   <li *ngFor="let schedule of schedules" class="flex-container">
     <a routerLink="/schedule_details/{{schedule._id}}">

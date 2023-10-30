@@ -10,6 +10,8 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
 import { AsignaturasComponent } from './components/asignaturas/asignaturas.component';
 import { SchedulesComponent } from './components/schedules/schedules.component';
 import { ScheduleDetailComponent } from './components/schedule-detail/schedule-detail.component';
+import { UserCreateComponent } from './components/user-create/user-create.component';
+import { ScheduleCreateComponent } from './components/schedule-create/schedule-create.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { ScheduleDetailComponent } from './components/schedule-detail/schedule-d
     UserDetailComponent,
     AsignaturasComponent,
     SchedulesComponent,
-    ScheduleDetailComponent
+    ScheduleDetailComponent,
+    UserCreateComponent,
+    ScheduleCreateComponent
   ],
   imports: [
     BrowserModule,

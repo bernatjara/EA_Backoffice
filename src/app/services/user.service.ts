@@ -43,5 +43,9 @@ export class UserService {
     const url = `${this.usersUrl}/${id}`;
     return this.http.delete<IUser>(url);
   }
-
+//CREATE: create a new user
+  createUser(user:any): Observable<any> {
+    const url = `${this.usersUrl}`;
+    return this.http.post<IUser>(url,user);
+  }
 }

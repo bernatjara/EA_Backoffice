@@ -1,5 +1,6 @@
 <h2>Users</h2>
-
+<button type="button" class="create" title="create user"
+routerLink="/user_create">Create new user</button>
 <ul class="users">
   <li *ngFor="let user of users" class="flex-container">
     <a routerLink="/detail/{{user._id}}">
