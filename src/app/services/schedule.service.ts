@@ -18,8 +18,8 @@ export class ScheduleService {
     private http: HttpClient
   ) { }
 
-  getSchedules(): Observable<ISchedule[]> {
-    return this.http.get<ISchedule[]>(this.schedulesUrl);
+  getSchedules(page: number, limit: number): Observable<any> {
+    return this.http.get<ISchedule[]>(`${this.schedulesUrl}/${page}/${limit}`);
   }
 
   getSchedule(id: string): Observable<ISchedule> {
