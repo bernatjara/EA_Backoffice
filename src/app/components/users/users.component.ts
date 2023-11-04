@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { IUser } from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
 
@@ -12,6 +13,7 @@ export class UsersComponent implements OnInit {
   totalPages: number = 0;
   currentPage: number = 1;
   limit: number = 5;
+  
 
   constructor(private userService: UserService) {}
 
@@ -58,4 +60,5 @@ export class UsersComponent implements OnInit {
     }
     
   }
+
 }

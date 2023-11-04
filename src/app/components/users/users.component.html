@@ -8,6 +8,8 @@ routerLink="/user_create">Create new user</button>
     </a>
     <button type="button" class="delete" title="delete user"
       (click)="delete(user)">x</button>
+    <button type="button" class="asignaturas" title="asignaturas user"
+      routerLink="/asignatura_user/{{user._id}}">!</button>
   </li>
   <div class="pagination" style="margin-top: auto; display: flex; justify-content: center; color:#fffcea;">
     <button type="button" [disabled]="currentPage === 1" (click)="previousPage()"> << Previous </button>
