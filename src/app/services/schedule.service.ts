@@ -8,7 +8,7 @@ import { ISchedule } from '../models/schedule';
   providedIn: 'root'
 })
 export class ScheduleService {
-  private schedulesUrl = 'http://localhost:9090/schedules';
+  private schedulesUrl = 'http://backend:9090/schedules';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
